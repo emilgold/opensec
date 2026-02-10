@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+/* Filing document viewer styles */
+.filing-document {
+  @apply max-w-full overflow-x-auto;
+}
+
+.filing-document table {
+  @apply border-collapse w-full text-sm;
+}
+
+.filing-document td,
+.filing-document th {
+  @apply border border-gray-300 px-2 py-1;
+}
+
+.filing-document img {
+  @apply max-w-full h-auto;
+}
+
+.filing-document a {
+  @apply text-sec-600 hover:text-sec-800 underline;
+}
+
+/* Diff styles */
+.diff-view ins {
+  @apply bg-green-100 text-green-900 no-underline;
+}
+
+.diff-view del {
+  @apply bg-red-100 text-red-900 line-through;
+}
